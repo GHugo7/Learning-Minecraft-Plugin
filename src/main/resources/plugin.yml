@@ -1,0 +1,15 @@
+name: MonPremierPlugin
+version: 0.1
+main: fr.mister.monpremierplugin.MonPremierPlugin
+api-version: 1.21.10
+author: Mister
+description: Mon tout premier projet pour apprendre le développement Java sur Minecraft !
+
+commands:
+  heal:
+    description: Heal ce PUTAIN de joueur DE MERDE !
+    usage: /heal
+
+  bonjour:
+    description: Bonjour à un joueur existant
+    usage: /bonjour <joueur>
