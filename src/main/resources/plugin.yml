@@ -13,3 +13,35 @@ commands:
   bonjour:
     description: Bonjour à un joueur existant
     usage: /bonjour <joueur>
+
+  teleport:
+    description: Permet une téléportation à un joueur
+    aliases:
+      - tp
+
+  teleporthere:
+    description: Permet de téléporter un jour à toi
+    aliases:
+      - tph
+
+  kit:
+    description: Obtiens ton kit
+    usage: /kit <starter|builder|pvp|list>
+    aliases: [kits]
+
+permissions:
+  kits.starter:
+    description: Permet d'utiliser le kit starter
+    default: true
+
+  kits.builder:
+    description: Permet d'utiliser le kit builder
+    default: false
+
+  kits.pvp:
+    description: Permet d'utiliser le kit pvp
+    default: op
+
+  kits.list:
+    description: Permet d'afficher la liste des kits
+    default: true

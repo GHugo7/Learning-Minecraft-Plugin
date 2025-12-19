@@ -2,6 +2,8 @@ package fr.mister.monpremierplugin;
 
 import fr.mister.monpremierplugin.commands.BonjourCommand;
 import fr.mister.monpremierplugin.commands.HealCommand;
+import fr.mister.monpremierplugin.commands.KitCommand;
+import fr.mister.monpremierplugin.commands.TeleportCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class MonPremierPlugin extends JavaPlugin {
@@ -13,6 +15,8 @@ public class MonPremierPlugin extends JavaPlugin {
         getLogger().info("=========================================");
         getCommand("heal").setExecutor(new HealCommand());
         getCommand("bonjour").setExecutor(new BonjourCommand());
+        getCommand("teleport").setExecutor(new TeleportCommand());
+        getCommand("kit").setExecutor(new KitCommand());
     }
     @Override
     public void onDisable() {

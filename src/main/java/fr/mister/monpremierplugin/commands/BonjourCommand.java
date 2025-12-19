@@ -10,7 +10,7 @@ public class BonjourCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String msg, String[] args) {
 
-        if (args.length < 1 || args[0] !Player) {
+        if (args.length < 1 ) {
             sender.sendMessage("ftg sale pute ! :)");
             return true;
         }
